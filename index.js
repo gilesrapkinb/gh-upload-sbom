@@ -55,7 +55,7 @@ try {
     }
   } else {
     bomPayload = {
-      project: project,
+      projectUUID: project,
       bom: encodedBomContents
     }
   }

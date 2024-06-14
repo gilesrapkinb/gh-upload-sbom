@@ -55,13 +55,13 @@ try {
     }
   } else {
     bomPayload = {
-      projectUUID: project,
+      project: project,
       bom: encodedBomContents
     }
   }
 
   if (parent && parent.trim().length > 0) {
-    bomPayload.parent = parent;
+    bomPayload.parentUUID = parent;
   } else if (parentName && parentName.trim().length > 0 && parentVersion && parentVersion.trim().length > 0) {
     bomPayload.parentName = parentName;
     bomPayload.parentVersion = parentVersion;
